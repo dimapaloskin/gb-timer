@@ -50,7 +50,6 @@ ld bc, FontTilesEnd - FontTiles
 
 ld hl, $9800
 ld bc, 32 * 32
-xor a
 .clean_screen
     xor a
     ld [hl+], a
