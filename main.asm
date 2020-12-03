@@ -145,13 +145,11 @@ UpdateHMS:
     and %00001111
     add a, $1
     ld [hli], a
-    ld b, b
     ret
 
 UpdateScreen:
     ld hl, SECONDS
     ld de, DRAW_SECONDS
-    ld b, b
     call UpdateHMS
 
     ld hl, MINUTES
